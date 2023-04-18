@@ -17,7 +17,7 @@ struct ListView: View {
     
     //The list of items to be completed
     @BlackbirdLiveModels({db in
-        try await http;: //mooditem.read/(from: db)
+    try await MoodItem.read(from: db)
     }) var moodItems
     
     //The items currently being added
